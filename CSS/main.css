@@ -119,13 +119,13 @@ body{
   font-size: 12px;
   line-height: 15px;
   vertical-align: middle;
+  text-transform: uppercase;
 }
 .header__item__link:hover{
   color: #333D4B;
 }
 
-
-.hero-section__info{
+.hero-section__container{
   background-image: url(../images/Bitmap.png);
   background-repeat: no-repeat;
   background-size: 1280px 600px;
@@ -136,8 +136,10 @@ body{
   padding: 117px 0;
   padding-left: 85px;
 }
-.hero-section__title{
+.hero-section__info{
   width: 493px;
+}
+.hero-section__title{
   font-family: "Fraunces", serif;
   font-style: normal;
   font-weight: 900;
@@ -146,15 +148,17 @@ body{
   color: #fff;
   margin: 0;
 }
+.hero-section__item{
+  width: 444px;
+  opacity: 0.8;
+}
 .hero-section__text{
-  width: 445px;
-  font-family: "Barlow" sans-serif;
+  font-family: "Barlow" , sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 26px;
   color: #FEFCF7;
-  opacity: 0.8;
   margin-top: 32px;
   margin-bottom: 56px;
 }
@@ -287,7 +291,7 @@ body{
   width: 350px; 
   background: #0E8784;
   border-radius: 8px;
-  padding: 48px;
+  padding: 72px 48px 48px 47px;
   bottom: -125px;
 }
 .service__item + .service__item{
@@ -426,10 +430,11 @@ body{
 .site-footer__list{
   margin-right: auto;
 }
-
 .site-footer__item__link:hover{
-  color:#FEFCF7;
+  color: #FEFCF7;
 }
+
+
 .site-footer__icon__link{
   text-decoration: none;
 }
@@ -440,6 +445,6 @@ body{
 .site-footer__icon__link + .site-footer__icon__link{
   margin-left: 24px;
 }
-.site-footer__image:hover{
-  background: #FDD6BA;
+.site-footer__icon__link:hover svg path{
+  fill: #FDD6BA;
 }
